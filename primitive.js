@@ -1,0 +1,11 @@
+let bookPrice = 299;
+console.log('Type of bookPrice:', typeof bookPrice);
+let bookName = "Ramayana";
+console.log('Type of bookName:', typeof bookName);
+let isAvailable = true;
+console.log('Type of isAvailable:', typeof isAvailable);
+let isAnotherBook;
+console.log('Type of nextShowTime:', typeof isAnotherBook);
+let specialOffer = null;
+console.log('Value of specialOffer:', specialOffer);
+console.log('Type of specialOffer:', typeof specialOffer);
