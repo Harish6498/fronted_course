@@ -2,29 +2,50 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
   // const name = "Harish";
   // const nickName = "HR";
-  const detailes = {
+  const detailes = [{
 
-    title: "Our Recent MoUs",
-    info: ["With JAGADGURU SRI SHIVARATHREESWARA UNIVERSITY, MYSORE, KARNATAKA",
-      "With RAXA Academy, Andhra Pradesh", "with JeilhwasungCo. Ltd, Korea",
-      "with University of Udine, Italy"
-    ]
+    image: "http://skuniversity.ac.in/images/portfolio/thumb/MoU6.JPG",
+    info: "With JAGADGURU SRI SHIVARATHREESWARA UNIVERSITY, MYSORE, KARNATAKA"
+  },
+  {
+    image: "http://skuniversity.ac.in/images/portfolio/thumb/MoU5.JPG",
+    info: "With RAXA Academy, Andhra Pradesh"
 
 
-  }
-  const info = {
+  },
+  {
+    image: "http://skuniversity.ac.in/images/portfolio/thumb/MoU1.JPG",
+    info: "with JeilhwasungCo. Ltd, Korea"
+  },
+  {
+    image: "http://skuniversity.ac.in/images/portfolio/thumb/MoU2.jpg",
+    info: "with University of Udine, Italy"
+  }];
+  const headings = {
     title: [
       "SK UNIVERSITY", "PLANNING & ANALYSIS", "CREATIVE IDEAS"
     ]
   }
-  const footerInfo={
-    footerTitle:"University colleges",
-    subTitle:[
-      "SKU of Science","SKU of Arts","SKU of Engineering","SKU of Pharmacy"
-    ]
-  }
+  // 
+  // const exmple = [{
+  //   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQasKPDCewT1v2j4mJjfCN1rqH2SczejiwkoA&s",
+  //   content: "This is natural-1 img"
+  // },
+  // {
+  //   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQasKPDCewT1v2j4mJjfCN1rqH2SczejiwkoA&s",
+  //   content: "This is natural-2 img",
+  // },
+  // {
+  //   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQasKPDCewT1v2j4mJjfCN1rqH2SczejiwkoA&s",
+  //   content: "This is natural-3 img",
+  // }];
+
+
+
+
   return (
     // <>
     //   <div class="container">
@@ -141,21 +162,21 @@ function App() {
             <div class="carousel-item active" data-bs-interval="10000">
               <img src="http://skuniversity.ac.in/photos/1.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                <h5>{info.title[0]}</h5>
+                <h5>{headings.title[0]}</h5>
 
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img src="http://skuniversity.ac.in/photos/2.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                <h5>{info.title[1]}</h5>
+                <h5>{headings.title[1]}</h5>
 
               </div>
             </div>
             <div class="carousel-item">
               <img src="http://skuniversity.ac.in/photos/3.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                <h5>{info.title[2]}</h5>
+                <h5>{headings.title[2]}</h5>
 
               </div>
             </div>
@@ -170,46 +191,112 @@ function App() {
           </button>
         </div>
 
-        <h2 class="h2">{detailes.title}</h2>
+        <h2 class="h2">Our Recent MoUs</h2>
         <div class="row">
-          <div class="col-6">
+          {
+            detailes.map((copyOfDetailes) => {
+              const { image, info } = copyOfDetailes
+              return (
+                <>
+                  <div class="col-6">
+                    <div class="card">
+                      <img src={image} class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <p class="card-text">{info}</p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )
+            })
+          }
+          {/* <div class="col-6">
             <div class="card">
-              <img src="http://skuniversity.ac.in/images/portfolio/thumb/MoU6.JPG" class="card-img-top" alt="..." />
+              <img src={image} class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">{detailes.info[0]}</p>
+                <p class="card-text">{info}</p>
               </div>
             </div>
           </div>
           <div class="col-6">
             <div class="card">
-              <img src="http://skuniversity.ac.in/images/portfolio/thumb/MoU5.JPG" class="card-img-top" alt="..." />
+              <img src={image} class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">{detailes.info[1]}</p>
+                <p class="card-text">{info}</p>
               </div>
             </div>
           </div>
           <div class="col-6">
             <div class="card">
-              <img src="http://skuniversity.ac.in/images/portfolio/thumb/MoU1.JPG" class="card-img-top" alt="..." />
+              <img src={image} class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">{detailes.info[2]}</p>
+                <p class="card-text">{info}</p>
               </div>
             </div>
           </div>
           <div class="col-6">
             <div class="card">
-              <img src="http://skuniversity.ac.in/images/portfolio/thumb/MoU2.jpg" class="card-img-top" alt="..." />
+              <img src={image} class="card-img-top" alt="..." />
               <div class="card-body">
-                <p class="card-text">{detailes.info[3]}</p>
+                <p class="card-text">{info}</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-      
+
 
     </>
+    // <div class="container">
+    //   <div class="row">
+    //     {
+    //       exmple.map((copyExmple) => {
+    //         const { image, content } = copyExmple
+    //         return (
+    //           <>
+    //             <div class="col-4">
+    //               <div class="card">
+    //                 <img src={image} class="card-img-top" alt="..." />
+    //                 <div class="card-body">
+    //                   <p class="card-text">{content}</p>
+    //                 </div>
+    //               </div>
+    //             </div>
+
+    //           </>
+    //         )
+
+    //       })
+    //     }
+    //     {/* <div class="col-4">
+    //       <div class="card">
+    //         <img src={image} class="card-img-top" alt="..." />
+    //         <div class="card-body">
+    //           <p class="card-text">{exmple.content}</p>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     <div class="col-4">
+    //       <div class="card">
+    //         <img src={image} class="card-img-top" alt="..." />
+    //         <div class="card-body">
+    //           <p class="card-text">{exmple.content}</p>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     <div class="col-4">
+    //       <div class="card">
+    //       <img src={image} class="card-img-top" alt="..." />
+    //         <div class="card-body">
+    //           <p class="card-text">{exmple.content}</p>
+    //         </div>
+    //       </div>
+    //     </div> */}
+    //   </div>
+    // </div>
+
   );
+
 }
 
 export default App;
