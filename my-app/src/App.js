@@ -3,8 +3,7 @@ import './App.css';
 
 function App() {
 
-  // const name = "Harish";
-  // const nickName = "HR";
+  
   const detailes = [{
 
     image: "http://skuniversity.ac.in/images/portfolio/thumb/MoU6.JPG",
@@ -29,61 +28,15 @@ function App() {
       "SK UNIVERSITY", "PLANNING & ANALYSIS", "CREATIVE IDEAS"
     ]
   }
-  // 
-  // const exmple = [{
-  //   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQasKPDCewT1v2j4mJjfCN1rqH2SczejiwkoA&s",
-  //   content: "This is natural-1 img"
-  // },
-  // {
-  //   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQasKPDCewT1v2j4mJjfCN1rqH2SczejiwkoA&s",
-  //   content: "This is natural-2 img",
-  // },
-  // {
-  //   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQasKPDCewT1v2j4mJjfCN1rqH2SczejiwkoA&s",
-  //   content: "This is natural-3 img",
-  // }];
+  
+
+  
 
 
 
 
   return (
-    // <>
-    //   <div class="container">
-    //     <div class="row">
-    //       <div class="col-4">
-    //         <div class="card">
-    //           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiWVLdEW0GABLEcu7Bhua8bktQlcR8cs6jR6IvK3CFiLLxZt4RdFRN_T315oIoPDxemf0&usqp=CAU" class="card-img-top" alt="..." />
-    //           <div class="card-body">
-    //             <h5 class="card-title">{name}</h5>
-    //             <p class="card-text">{nickName}</p>
-    //             <a href="#" class="btn btn-primary">Let's Together</a>
-    //           </div>
-    //         </div>
-    //       </div>
-    //       <div class="col-4">
-    //         <div class="card">
-    //         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0OXiFkxfqmFzegJNvGOmHgGLb0_5IzEEKWSSr-gjQxo2Pl7THX5ueBgl3GFmojySqS3c&usqp=CAU" class="card-img-top" alt="..." />
-    //         <div class="card-body">
-    //           <h5 class="card-title">{name}</h5>
-    //           <p class="card-text">{nickName}</p>
-    //           <a href="#" class="btn btn-primary">Let's Together</a>
-    //         </div>
-    //       </div>
-    //       </div>
-    //       <div class="col-4">
-    //         <div class="card">
-    //         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZv9r-w0AXvRerk13ts5Yzpj9_Y3pZj7Ul96QBp4i1EnKFxqVktK8DvibHJ0QPQsTcGJ0&usqp=CAU" class="card-img-top" alt="..." />
-    //         <div class="card-body">
-    //           <h5 class="card-title">{name}</h5>
-    //           <p class="card-text">{nickName}</p>
-    //           <a href="#" class="btn btn-primary">Let's Together</a>
-    //         </div>
-    //       </div>
-    //       </div>
-
-    //     </div>
-    //   </div>
-    // </>
+    
     <>
       <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -210,90 +163,14 @@ function App() {
               )
             })
           }
-          {/* <div class="col-6">
-            <div class="card">
-              <img src={image} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">{info}</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <img src={image} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">{info}</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <img src={image} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">{info}</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <img src={image} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">{info}</p>
-              </div>
-            </div>
-          </div> */}
+          
         </div>
       </div>
+      
 
 
     </>
-    // <div class="container">
-    //   <div class="row">
-    //     {
-    //       exmple.map((copyExmple) => {
-    //         const { image, content } = copyExmple
-    //         return (
-    //           <>
-    //             <div class="col-4">
-    //               <div class="card">
-    //                 <img src={image} class="card-img-top" alt="..." />
-    //                 <div class="card-body">
-    //                   <p class="card-text">{content}</p>
-    //                 </div>
-    //               </div>
-    //             </div>
-
-    //           </>
-    //         )
-
-    //       })
-    //     }
-    //     {/* <div class="col-4">
-    //       <div class="card">
-    //         <img src={image} class="card-img-top" alt="..." />
-    //         <div class="card-body">
-    //           <p class="card-text">{exmple.content}</p>
-    //         </div>
-    //       </div>
-    //     </div>
-    //     <div class="col-4">
-    //       <div class="card">
-    //         <img src={image} class="card-img-top" alt="..." />
-    //         <div class="card-body">
-    //           <p class="card-text">{exmple.content}</p>
-    //         </div>
-    //       </div>
-    //     </div>
-    //     <div class="col-4">
-    //       <div class="card">
-    //       <img src={image} class="card-img-top" alt="..." />
-    //         <div class="card-body">
-    //           <p class="card-text">{exmple.content}</p>
-    //         </div>
-    //       </div>
-    //     </div> */}
-    //   </div>
-    // </div>
+    
 
   );
 
