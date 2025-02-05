@@ -1,0 +1,36 @@
+.heading{
+    text-align: center;
+}
+.bg-container{
+    background-color:pink;
+}
+.btn{
+    background-color:black;
+    color: white;
+}
+.container-heading{
+    background-color: blueviolet;
+    border-radius: 12px;
+    margin: 4px;
+}
+.viewmore{
+    text-align: center;
+    color:black;
+}
+.heading-cntr{
+    background-color: cornflowerblue;
+    border-radius: 12px;
+    margin-top: 12px;
+    padding-top: 4px;
+
+}
+.content-container{
+    background-color: cornflowerblue;
+    border-radius: 12px;
+    margin-top: 12px;
+    padding-top: 4px;
+
+}
+.main-heading{
+    text-align: center;
+}

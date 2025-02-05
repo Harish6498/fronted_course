@@ -1,0 +1,42 @@
+.first-container{
+    width:50%;
+    height:50%;
+    border-radius: 4px;
+    border-width: 4px;
+    margin-bottom: 4px;
+}
+.message{
+    border-radius: 16px;
+    background-color: blue;
+    color: white;
+    padding: 2px;
+    margin: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.viewMore{
+    border-radius: 16px;
+    padding: 2px;
+    margin: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 4px;
+    
+
+}
+.image{
+    border-radius: 16px;
+    margin-top: 12px;
+    border-width: 12px;
+}
+.second-container{
+    width:50%;
+    height:50%;
+    box-shadow: 8px;
+    border-width: thick;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    border: 8px;
+
+
+}
