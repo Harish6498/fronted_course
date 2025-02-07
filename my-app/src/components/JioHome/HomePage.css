@@ -1,0 +1,89 @@
+
+
+
+.m-heading{
+    color: black;
+    /* text-align: center; */
+    padding: 18px;
+}
+.m-para{
+    color: black;
+
+    
+}
+.heading{
+    color: black;
+    text-align: center;
+    padding: 18px;
+}
+.para{
+    text-align: center;
+    
+}
+.btn{
+    background-color: blue;
+    border-radius: 14px;
+    margin-top: 24px;
+    padding: 6px;
+    color: white;
+    position: absolute;
+    left: 15%;
+}
+
+.back-container{
+    height: 750px;
+    background-image: url('https://jep-asset.akamaized.net/cms/assets/jioapps/myjio/top-banner-mob.webp');
+    background-size: cover;
+}
+.get-btn{
+    background-color: blue;
+    border-radius: 14px;
+    padding: 6px;
+    color: white;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 32px;
+
+}
+.nav-container{
+    background-color: blue;
+}
+.nav-btn{
+    background-color: blue;
+
+}
+/* .card-resize{
+    height: 300px;
+    width: 500px;
+} */
+ .bg-image{
+    max-width: 1250px;
+    max-height: 400px;
+ }
+ .card-container{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-radius: 24px;
+ }
+ .img-container{
+    max-width: 250px;
+    max-height: 400px;
+
+ }
+ .image-cards{
+    margin-top: 80px;
+    border-width: 0px;
+ }
+ .card-heading{
+    font-weight: bold;
+ }
+ .smart-heading{
+    color: black;
+    font-weight: bold;
+    margin-top: 12px;
+    
+ }
+ .query-container{
+    margin-top: 42px;
+ }
