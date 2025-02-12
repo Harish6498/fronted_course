@@ -91,3 +91,29 @@
     color: white;
 
 }
+.rechargeHeading{
+    text-align: center;
+    color: black;
+    
+}
+.inputContainer{
+    
+    background-color: blue;
+    position: absolute;
+    width:30%;
+    height:15%;
+    
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 32px;
+
+}
+.labelHeading{
+    color: white;
+    padding-right: 2px;
+
+}
+.rechargeBtn{
+    border-radius: 6px;
+    padding: 6px;
+}

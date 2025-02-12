@@ -1,5 +1,15 @@
-import React from "react";
+import React,{useState} from "react";
+
+
+
 function MobileList() {
+    const [number,updateNumber]=useState("9959136498");
+
+    function getTypedValue(receivedValue){
+        console.log(receivedValue.target.value);
+        updateNumber(receivedValue.target.value)
+
+    }
     return (
         <div class="container">
             <div class="container">
@@ -42,7 +52,7 @@ function MobileList() {
                             <div class="carousel-item active">
                                 <img src="https://jep-asset.akamaized.net/cms/assets/mobile/discover/annual-plan.webp" class="d-block w-100" alt="..." />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5 class="carousel-firstheading">Maximum Saving with 
+                                    <h5 class="carousel-firstheading">Maximum Saving with
                                         Annual plan</h5>
                                     <p class="carousel-firstpara">Talk,text and surf non stop</p>
                                     <buuton class="carousel-firstbutton">Recharge Now</buuton>
@@ -74,6 +84,15 @@ function MobileList() {
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="rechargeHeading">Recharge or Pay Bills</h1>
+                <div class="container inputContainer">
+                    <label class="labelHeading">Enetr a Number</label>
+                    {/* <div>{number}</div> */}
+                    <input type="text" onChange={getTypedValue}/>
+                    <button class="rechargeBtn">Recharge</button>
                 </div>
             </div>
         </div>
