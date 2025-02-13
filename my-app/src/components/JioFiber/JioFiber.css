@@ -1,0 +1,93 @@
+.carousel-firstheading{
+    color:white;
+    font-size: 42px;
+    text-align: left;
+    position: absolute;
+    top: -500%;
+    left: 0%;
+    transform: translateX(-20%);
+    
+}
+.carousel-secondheading{
+    color:white;
+    font-size: 42px;
+    text-align: left;
+    position: absolute;
+    top: -700%;
+    left: 10%;
+    transform: translateX(-20%);
+    
+}
+.carousel-thirdheading{
+    color: white;
+    font-size: 42px;
+    text-align: left;
+    position: absolute;
+    top: -800%;
+    left: 10%;
+    transform: translateX(-20%);
+    
+}
+.carousel-firstpara{
+    color:white;
+    font-size: 24px;
+    text-align: left;
+    position: absolute;
+    top:-300%;
+    left: 5%;
+    transform: translateX(-10%);
+
+}
+.carousel-secondpara{
+    color: white;
+    font-size: 24px;
+    text-align: left;
+    position: absolute;
+    top:-400%;
+    left: 10%;
+    transform: translateX(-10%);
+
+}
+.carousel-thirdpara{
+    color: white;
+    font-size: 24px;
+    text-align: left;
+    position: absolute;
+    top:-500%;
+    left: 3%;
+    transform: translateX(-10%);
+
+}
+.carousel-firstbutton{
+    border-radius: 32px;
+    background-color: blue;
+    padding: 8px;
+    position: absolute;
+    top: -100%;
+    left:20%;
+    transform: translatex(-75%);
+    color: white;
+
+}
+.carousel-secondbutton{
+    border-radius: 32px;
+    background-color: blue;
+    padding: 8px;
+    position: absolute;
+    left:25%;
+    top: -250%;
+    transform: translatex(-75%);
+    color: white;
+
+}
+.carousel-thirdbutton{
+    border-radius: 32px;
+    background-color: blue;
+    padding: 6px;
+    position: absolute;
+    top: -300%;
+    left:10%;
+    transform: translatex(-75%);
+    color: white;
+
+}

@@ -1,0 +1,29 @@
+.loginMainHeading{
+    text-align: center;
+    color: blue;
+    margin-top: 12px;
+}
+.loginCard{
+    height: 70%;
+    width: 30%;
+    margin-top: 64px;
+    background-color: black;
+    
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    
+    
+}
+.loginHeading{
+    color:white;
+    text-align: center;
+}
+.loginBtn{
+    margin-top:32px;
+    width: 50%;
+    margin-left: 100px;
+}
+.labelHeading{
+    color: white;
+}
