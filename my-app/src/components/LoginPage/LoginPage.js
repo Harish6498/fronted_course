@@ -2,23 +2,27 @@ import React from 'react';
 import {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function LoginPage() {
+export default function LoginPage({setIsLoggedIn}) {
     const navigate=useNavigate();
-    const [userName,updateUserName]=useState("Hareesh")
-    const [password,updatePassword]=useState("8152")
+    const [userName,updateUserName]=useState("")
+    const [password,updatePassword]=useState("")
     function getUserName(event){
         console.log(event.target.value)
-        //  updateUserName(event.target.value)
+        updateUserName(event.target.value)
 
     }
     function getPassword(event){
         console.log(event.target.value)
-        //  updatePassword(event.target.value)
+        updatePassword(event.target.value)
     }
     function getLoginDetailes(){
-        console.log(updateUserName,updatePassword)
+        console.log(userName,password)
         debugger
-        if (userName === "Hareesh" && password === "8152"){
+        if (userName === "" || password === ""){
+            alert("User name not found")
+        }
+        else if (userName === "Hareesh" && password === "8152"){
+            setIsLoggedIn(true)
             navigate("/HomePage")
         }else{
             alert("User Name are Not Found....")
