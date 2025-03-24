@@ -12,6 +12,7 @@ import LoginPage from './components/LoginPage/LoginPage.js';
 import "./components/LoginPage/LoginPage.css";
 import JioFiber from './components/JioFiber/JioFiber.js';
 import "./components/JioFiber/JioFiber.css";
+import MyProject from './components/MyProject/MyProject.js';
 
 
 
@@ -27,7 +28,7 @@ function App() {
 
 
         <Route path="/" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />}></Route>
-
+        
         <Route path="/HomePage" element={<HomePage />}></Route>
         <Route path="/MobileList" element={<MobileList />}></Route>
         <Route path="/JioFiber" element={<JioFiber />}></Route>
